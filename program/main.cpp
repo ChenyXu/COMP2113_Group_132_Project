@@ -23,7 +23,7 @@ int main() {
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	dice_result = dice();
 	int temp[6] = {2,4,3,5,0,1};
-	dice = temp[dice];
+	dice_result = temp[dice_result];
 
 	cout << "The dice result is "<<dice_result<<endl;
 	cout << "Press to start the game... ...";
