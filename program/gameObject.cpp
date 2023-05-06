@@ -156,7 +156,8 @@ void MeetingRoom::showSuspects() {
 
 void MeetingRoom::submitAnswer(){
 	string murderer;
-	cout << "Please type in the murderer you have in mind and press enter." << endl;
+	cout << "Suspects: Mrs. Buddy, Mr. Wesley, Ms. Scarlett, Mr. Phillip, Mr. White, Mr. Francis" << endl;
+	cout << "Please type in the name of the murderer you have in mind exactly as stated above press enter." << endl;
 	cout << endl;
 	getline(cin, murderer);
 	if (murderer == characters[dice].name) {
