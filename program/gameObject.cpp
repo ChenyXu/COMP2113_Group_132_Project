@@ -124,7 +124,7 @@ void MeetingRoom::welcome() {
 	if (command == "ask"){
 		askSuspects();
 	} else if (command == "move") {
-		rooms[dice].showHints();
+		rooms[dice-1].showHints();
 	} else if (command == "check") {
 		showSuspects();
 	} else if (command == "submit") {
