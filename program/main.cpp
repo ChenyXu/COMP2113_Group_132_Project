@@ -22,10 +22,11 @@ int main() {
 	cout << "Welcome "<< name<< ", please press enter to roll a dice ";
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	dice_result = dice();
+	cout << "The dice result is "<<dice_result<<endl;
+	
 	int temp[6] = {2,4,3,5,0,1};
 	dice_result = temp[dice_result];
-
-	cout << "The dice result is "<<dice_result + 1<<endl;
+	
 	cout << "Press to start the game... ...";
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	system("clear");
